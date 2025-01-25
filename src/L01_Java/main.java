@@ -1,28 +1,33 @@
 package L01_Java;
 
 import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        int a = 40;
-        int b = -780;
+        //to find sum and multiply
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter integer num: ");
+//        int num1 = scan.nextInt();
+//        System.out.println("Enter double num: ");
+//        double num2 = scan.nextDouble();
+//        System.out.println("Sum:" + (num1 + num2));
+//        System.out.println("Multiply:" + (num1 * num2));
 
-        int c = a + b;
 
-        int Age = 22;
+        //TO GET USER INFO
 
-        Age += 5;
-        System.out.println(Age);
-        System.out.println("Result:" + c);
-
-        String str = "Cahangir";
-        int $d = 6;
-        System.out.println($d);
-
-        float g = 40f;
-
-        System.out.println(g);
-
-        System.out.println(str.toUpperCase());
+        Scanner scan  = new Scanner(System.in);
+        System.out.println("Name: ");
+        String name = scan.next();
+        System.out.println("Surname: ");
+        String surname = scan.next();
+        System.out.println("Age: ");
+        int age = scan.nextInt();
+        System.out.println(
+                "Name: " + name +
+                "\nSurname: " + surname +
+                "\nAge: " + age
+        );
     }
 }
